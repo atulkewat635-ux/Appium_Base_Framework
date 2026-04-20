@@ -10,6 +10,7 @@ public class SuiteFlow {
 	public MyCartPage MyCartPageObj;
     public ProductsPage ProductPageObj;
     public LoginPage LoginPageObj;
+    
 
     public SuiteFlow(AndroidDriver driver) {
     	MyCartPageObj = new MyCartPage(driver);

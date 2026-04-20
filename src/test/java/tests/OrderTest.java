@@ -15,13 +15,13 @@ public class OrderTest extends BaseTest {
 	
 
     @Test(dataProvider = "loginData", dataProviderClass = DataProviders.class)
-    public void OrderProduct(LoginData data) throws InterruptedException {
+    public void OrderProduct(LoginData Logindata) throws InterruptedException {
     	
     	
     	
     	
-    	System.out.println(data.username);
-    	System.out.println(data.password);
+    	//System.out.println(data.username);
+    	//System.out.println(data.password);
 
 
         System.out.println("--- TEST STARTED ---");
@@ -29,6 +29,7 @@ public class OrderTest extends BaseTest {
        if(PageObj.ProductPageObj.OrangeBagImage().isDisplayed()) {
         	System.out.println("Orange bag Image is displayed");
         }
+       
         
        waitFor2Seconds();
        
@@ -49,9 +50,9 @@ public class OrderTest extends BaseTest {
        
        
        
-       sendKeys(PageObj.LoginPageObj.UsernameTxtFld(), data.username);
+       sendKeys(PageObj.LoginPageObj.UsernameTxtFld(), Logindata.username);
        
-       sendKeys(PageObj.LoginPageObj.PasswordTxtFld(), data.password);
+       sendKeys(PageObj.LoginPageObj.PasswordTxtFld(), Logindata.password);
        
        click(PageObj.LoginPageObj.LoginBtn());
        
