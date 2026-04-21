@@ -21,5 +21,6 @@ public class DriverFactory {
         caps.setCapability("appium:noReset", false);
         caps.setCapability("appium:ignoreHiddenApiPolicyError", true);
         return new AndroidDriver(URI.create("http://127.0.0.1:4723").toURL(),caps);
+        // dummy test
     }
 }
