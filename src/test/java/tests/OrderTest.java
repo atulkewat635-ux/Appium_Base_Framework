@@ -1,12 +1,8 @@
 package tests;
 
 import base.BaseTest;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pages.LoginPage;
-import pages.MyCartPage;
-import pages.ProductsPage;
 import testdata.DataProviders;
 import testdata.LoginData;
 
@@ -26,7 +22,7 @@ public class OrderTest extends BaseTest {
 
         System.out.println("--- TEST STARTED ---");
         
-       if(PageObj.ProductPageObj.OrangeBagImage().isDisplayed()) {
+       if(waitForVisibility(PageObj.ProductPageObj.OrangeBagImage()).isDisplayed()) {
         	System.out.println("Orange bag Image is displayed");
         }
        
