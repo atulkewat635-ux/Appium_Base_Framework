@@ -3,7 +3,6 @@ package pages;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
