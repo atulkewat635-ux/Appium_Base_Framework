@@ -2,35 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-19T04:29:55 IST" name="Appium Suite" finished-at="2026-04-19T04:30:10 IST" duration-ms="15533">
+  <suite started-at="2026-04-22T14:42:30 IST" name="Appium Suite" finished-at="2026-04-22T14:42:50 IST" duration-ms="19445">
     <groups>
     </groups>
-    <test started-at="2026-04-19T04:29:55 IST" name="Login Test" finished-at="2026-04-19T04:30:10 IST" duration-ms="15533">
-      <class name="tests.OrderTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:29:47 IST" name="setup" finished-at="2026-04-19T04:29:55 IST" duration-ms="8143" status="PASS">
+    <test started-at="2026-04-22T14:42:30 IST" name="Login Test" finished-at="2026-04-22T14:42:50 IST" duration-ms="19445">
+      <class name="tests.SauceLabsNavigation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:18 IST" name="setup" finished-at="2026-04-22T14:42:30 IST" duration-ms="12244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:29:55 IST" name="beforeMethod" finished-at="2026-04-19T04:29:56 IST" duration-ms="1388" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:30 IST" name="beforeMethod" finished-at="2026-04-22T14:42:32 IST" duration-ms="1831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="OrderProduct(testdata.LoginData)[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:29:56 IST" name="OrderProduct" data-provider="loginData" finished-at="2026-04-19T04:30:10 IST" duration-ms="13724" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testdata.LoginData@1835dc92]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifySauceLabsNavigation()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:32 IST" name="verifySauceLabsNavigation" finished-at="2026-04-22T14:42:50 IST" duration-ms="17543" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:30:10 IST" name="tearDown" finished-at="2026-04-19T04:30:10 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifySauceLabsNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:50 IST" name="tearDown" finished-at="2026-04-22T14:42:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.OrderTest -->
+      </class> <!-- tests.SauceLabsNavigation -->
     </test> <!-- Login Test -->
   </suite> <!-- Appium Suite -->
 </testng-results>

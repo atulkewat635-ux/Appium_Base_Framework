@@ -2,7 +2,8 @@
 <suite name="Appium Suite">
     <test name="Login Test">
         <classes>
-            <class name="tests.OrderTest"/>
+           <class name="tests.OrderTest"/>
+           <class name="tests.SauceLabsNavigation"/>
         </classes>
     </test>
 </suite>
