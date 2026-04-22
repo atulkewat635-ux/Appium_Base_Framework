@@ -5,4 +5,9 @@
             <class name="tests.OrderTest"/>
         </classes>
     </test>
+    <test name="WebView Test">
+        <classes>
+            <class name="tests.WebViewTest"/>
+        </classes>
+    </test>
 </suite>

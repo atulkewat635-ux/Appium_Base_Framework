@@ -1,7 +1,7 @@
 package testdata;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.File;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class JsonReader {
@@ -10,7 +10,7 @@ public class JsonReader {
         try {
             ObjectMapper mapper = new ObjectMapper();
             return mapper.readValue(
-                new File("C:\\Users\\atulkewat\\Downloads\\Appium_mobile_Automation 1\\Appium_mobile_Automation\\src\\test\\java\\testdata\\testdata.json"),
+                Paths.get(System.getProperty("user.dir"), "src", "test", "java", "testdata", "testdata.json").toFile(),
                 mapper.getTypeFactory().constructCollectionType(List.class, LoginData.class)
             );
         } catch (Exception e) {
