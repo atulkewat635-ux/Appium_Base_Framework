@@ -21,6 +21,10 @@ public class DriverFactory {
         caps.setCapability("appium:appActivity", "com.saucelabs.mydemoapp.android.view.activities.SplashActivity");
         caps.setCapability("appium:noReset", false);
         caps.setCapability("appium:ignoreHiddenApiPolicyError", true);
+        caps.setCapability("autoWebview", false);
+        caps.setCapability("chromedriverExecutable",
+        		System.getProperty("user.dir") +"\\src\\test\\java\\utils\\Resources\\chromedriver.exe");
+        caps.setCapability("autoGrantPermissions", true);
         return new AndroidDriver(URI.create("http://127.0.0.1:4723").toURL(),caps);
     }
 }

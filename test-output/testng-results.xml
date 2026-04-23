@@ -2,6 +2,24 @@
 <testng-results retried="2" ignored="0" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+  <suite started-at="2026-04-22T14:42:30 IST" name="Appium Suite" finished-at="2026-04-22T14:42:50 IST" duration-ms="19445">
+    <groups>
+    </groups>
+    <test started-at="2026-04-22T14:42:30 IST" name="Login Test" finished-at="2026-04-22T14:42:50 IST" duration-ms="19445">
+      <class name="tests.SauceLabsNavigation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:18 IST" name="setup" finished-at="2026-04-22T14:42:30 IST" duration-ms="12244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:30 IST" name="beforeMethod" finished-at="2026-04-22T14:42:32 IST" duration-ms="1831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySauceLabsNavigation()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:32 IST" name="verifySauceLabsNavigation" finished-at="2026-04-22T14:42:50 IST" duration-ms="17543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySauceLabsNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SauceLabsNavigation@ba2f4ec]" started-at="2026-04-22T14:42:50 IST" name="tearDown" finished-at="2026-04-22T14:42:50 IST" duration-ms="1" status="PASS">
   <suite started-at="2026-04-22T17:33:16 IST" name="Appium Suite" finished-at="2026-04-22T17:36:39 IST" duration-ms="202397">
     <groups>
     </groups>
@@ -292,7 +310,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.OrderTest -->
+      </class> <!-- tests.SauceLabsNavigation -->
     </test> <!-- Login Test -->
   </suite> <!-- Appium Suite -->
 </testng-results>
