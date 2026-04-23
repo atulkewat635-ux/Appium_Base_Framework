@@ -24,10 +24,7 @@ public class BaseTest {
     public AndroidDriver driver;
     public WebDriverWait wait;
     public SuiteFlow PageObj;
-<<<<<<< HEAD
-=======
     public static Logger log = LogManager.getLogger(BaseTest.class);
->>>>>>> 93b795b (Latest 22 april)
 
     @BeforeClass(alwaysRun = true)
     public void setup() throws Exception {
@@ -40,10 +37,7 @@ public class BaseTest {
     public void tearDown() {
         if (driver != null) {
             driver.quit();
-<<<<<<< HEAD
             driver = null;
-=======
->>>>>>> 93b795b (Latest 22 april)
         }
     }
 

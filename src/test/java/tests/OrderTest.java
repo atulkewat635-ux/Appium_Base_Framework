@@ -1,20 +1,10 @@
 package tests;
 
 import base.BaseTest;
-<<<<<<< HEAD
-import org.testng.annotations.Test;
-
-=======
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.RetryAnalyzer;
-import pages.LoginPage;
-import pages.MyCartPage;
-import pages.ProductsPage;
->>>>>>> 93b795b (Latest 22 april)
 import testdata.DataProviders;
 import testdata.LoginData;
 
