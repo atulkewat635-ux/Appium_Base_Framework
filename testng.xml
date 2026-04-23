@@ -1,4 +1,4 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"> 
 <suite name="Appium Suite">
     <test name="Login Test">
         <classes>
@@ -6,4 +6,17 @@
            <class name="tests.SauceLabsNavigation"/>
         </classes>
     </test>
+
+    <test name="WebView Test">
+        <classes>
+            <class name="tests.WebViewTest"/>
+        </classes>
+    </test>
+    
+     <test name="WebPage Navigation Test">
+        <classes>
+            <class name="tests.SauceLabsNavigation"/>
+        </classes>
+    </test> 
+    
 </suite>

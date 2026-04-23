@@ -3,6 +3,7 @@ package utils;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URI;
+import java.nio.file.Paths;
 
 
 public class DriverFactory {
@@ -13,9 +14,9 @@ public class DriverFactory {
 
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:automationName", "UiAutomator2");
-        caps.setCapability("appium:deviceName", "sdk_gphone16k_x86_64");
-        caps.setCapability("appium:platformVersion", "13");
-        caps.setCapability("appium:app", System.getProperty("user.dir") + "\\src\\test\\java\\utils\\Resources\\mda-2.2.0-25.apk");
+        caps.setCapability("appium:deviceName", "emulator-5554");
+        caps.setCapability("appium:platformVersion", "17");
+        caps.setCapability("appium:app", Paths.get(System.getProperty("user.dir"), "src", "test", "resources", "mda-2.2.0-25.apk").toString());
         caps.setCapability("appium:appPackage", "com.saucelabs.mydemoapp.android");
         caps.setCapability("appium:appActivity", "com.saucelabs.mydemoapp.android.view.activities.SplashActivity");
         caps.setCapability("appium:noReset", false);

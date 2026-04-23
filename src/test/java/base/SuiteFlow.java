@@ -7,6 +7,7 @@ import pages.MenuPage;
 import pages.MyCartPage;
 import pages.ProductsPage;
 import pages.SauceLabsWebViewPage;
+import pages.WebViewPage;
 
 public class SuiteFlow {
 	
@@ -16,7 +17,8 @@ public class SuiteFlow {
     public AboutPage AboutPageObj;
     public MenuPage MenuPageObj;
     public SauceLabsWebViewPage SauceLabsWebViewPageObj;
-
+    public WebViewPage WebViewObj;
+    
     public SuiteFlow(AndroidDriver driver) {
     	MyCartPageObj = new MyCartPage(driver);
     	ProductPageObj = new ProductsPage(driver);
@@ -24,6 +26,7 @@ public class SuiteFlow {
     	AboutPageObj = new AboutPage(driver);
     	MenuPageObj =  new MenuPage(driver);
     	SauceLabsWebViewPageObj = new SauceLabsWebViewPage(driver);
+        WebViewObj = new WebViewPage(driver);
     }
 	/*
 	public MyCartPage MyCartPageObj = new MyCartPage(driver);

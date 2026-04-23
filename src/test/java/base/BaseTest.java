@@ -5,11 +5,8 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 
 import utils.DriverFactory;
 
@@ -20,29 +17,23 @@ public class BaseTest {
     public AndroidDriver driver;
     public WebDriverWait wait;
     public SuiteFlow PageObj;
-    
-    
 
-
-    @BeforeSuite
+    @BeforeClass(alwaysRun = true)
     public void setup() throws Exception {
         driver = DriverFactory.initializeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        PageObj = new SuiteFlow(driver);
     }
 
-    @AfterSuite
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
-           // driver.quit();
+            driver.quit();
+            driver = null;
         }
     }
-    
-    @BeforeClass
-  	public void beforeMethod() {
-    PageObj = new SuiteFlow(driver);}
-    
+
     public WebElement waitForVisibility(WebElement element) {
-        new WebDriverWait(driver, Duration.ofSeconds(15));
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
     
@@ -60,13 +51,12 @@ public class BaseTest {
     }
     
     public void click(WebElement element) {
-    	try {
-    	waitForVisibility(element);
-        element.click();}
-    	
-    	catch (Exception e) {
-    		System.out.println("Element not clicked" + e);
-    	}
+        try {
+            waitForVisibility(element);
+            element.click();
+        } catch (Exception e) {
+            throw new RuntimeException("Unable to click element: " + element, e);
+        }
     }
     
     public void waitFor2Seconds() {
