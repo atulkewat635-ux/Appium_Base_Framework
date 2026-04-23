@@ -2,35 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-19T04:29:55 IST" name="Appium Suite" finished-at="2026-04-19T04:30:10 IST" duration-ms="15533">
+  <suite started-at="2026-04-22T15:37:44 IST" name="Appium Suite" finished-at="2026-04-22T15:38:17 IST" duration-ms="33304">
     <groups>
     </groups>
-    <test started-at="2026-04-19T04:29:55 IST" name="Login Test" finished-at="2026-04-19T04:30:10 IST" duration-ms="15533">
-      <class name="tests.OrderTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:29:47 IST" name="setup" finished-at="2026-04-19T04:29:55 IST" duration-ms="8143" status="PASS">
+    <test started-at="2026-04-22T15:37:44 IST" name="Product Sort Test" finished-at="2026-04-22T15:38:17 IST" duration-ms="33304">
+      <class name="tests.ProductSortTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductSortTest@36902638]" started-at="2026-04-22T15:37:44 IST" name="setup" finished-at="2026-04-22T15:37:55 IST" duration-ms="10907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:29:55 IST" name="beforeMethod" finished-at="2026-04-19T04:29:56 IST" duration-ms="1388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="OrderProduct(testdata.LoginData)[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:29:56 IST" name="OrderProduct" data-provider="loginData" finished-at="2026-04-19T04:30:10 IST" duration-ms="13724" status="PASS">
+        <test-method signature="WebView(testdata.LoginData)[pri:0, instance:tests.ProductSortTest@36902638]" started-at="2026-04-22T15:37:55 IST" name="WebView" data-provider="loginData" finished-at="2026-04-22T15:38:17 IST" duration-ms="21476" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[testdata.LoginData@1835dc92]]>
+                <![CDATA[testdata.LoginData@feb098f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrderTest@77f1baf5]" started-at="2026-04-19T04:30:10 IST" name="tearDown" finished-at="2026-04-19T04:30:10 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- WebView -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductSortTest@36902638]" started-at="2026-04-22T15:38:17 IST" name="tearDown" finished-at="2026-04-22T15:38:17 IST" duration-ms="739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.OrderTest -->
-    </test> <!-- Login Test -->
+      </class> <!-- tests.ProductSortTest -->
+    </test> <!-- Product Sort Test -->
   </suite> <!-- Appium Suite -->
 </testng-results>

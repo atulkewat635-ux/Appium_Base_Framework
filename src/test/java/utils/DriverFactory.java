@@ -14,14 +14,17 @@ public class DriverFactory {
 
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:automationName", "UiAutomator2");
-        caps.setCapability("appium:deviceName", "emulator-5554");
-        caps.setCapability("appium:platformVersion", "17");
+        //caps.setCapability("appium:deviceName", "emulator-5554");
+        //caps.setCapability("appium:platformVersion", "17");
+        caps.setCapability("appium:deviceName", "realme P1 5G");
+		caps.setCapability("appium:platformVersion", "15");
         caps.setCapability("appium:app", Paths.get(System.getProperty("user.dir"), "src", "test", "resources", "mda-2.2.0-25.apk").toString());
         caps.setCapability("appium:appPackage", "com.saucelabs.mydemoapp.android");
         caps.setCapability("appium:appActivity", "com.saucelabs.mydemoapp.android.view.activities.SplashActivity");
-        caps.setCapability("appium:noReset", false);
+        //caps.setCapability("appium:noReset", false);
+        caps.setCapability("noReset", true);
         caps.setCapability("appium:ignoreHiddenApiPolicyError", true);
         return new AndroidDriver(URI.create("http://127.0.0.1:4723").toURL(),caps);
-        // dummy test
+        
     }
 }

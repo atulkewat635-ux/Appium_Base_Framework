@@ -31,6 +31,26 @@ public class ProductsPage extends BasePage {
     @AndroidFindBy(accessibility  = "View cart")
     private WebElement ViewCartBtn;
     
+    // sorting locators
+    @AndroidFindBy(id  = "com.saucelabs.mydemoapp.android:id/sortIV")
+    private WebElement SortIcon;
+    @AndroidFindBy(xpath  = "//android.widget.TextView[@text=\"Name - Descending\"]")
+    private WebElement NameDescOpt;
+    @AndroidFindBy(xpath  = "//android.widget.TextView[@text=\"Price - Ascending\"]")
+    private WebElement PriceAscOpt;
+    @AndroidFindBy(xpath  = "//android.widget.TextView[@text=\"Price - Descending\"]")
+    private WebElement PriceDescOpt;
+    @AndroidFindBy(xpath  = "//android.widget.TextView[@text=\"Name - Ascending\"]")
+    private WebElement NameAscOpt;
+    @AndroidFindBy(xpath  = "//android.widget.TextView[@content-desc=\"Product Title\" and @text=\"Test.allTheThings() T-Shirt (yellow)\"]")
+    private WebElement NameDescResult;
+    @AndroidFindBy(accessibility  = "//android.widget.TextView[@content-desc=\"Product Price\" and @text=\"$ 7.99\"]")
+    private WebElement PriceAscResult;
+    @AndroidFindBy(accessibility  = "(//android.widget.TextView[@content-desc=\"Product Price\"])[1]")
+    private WebElement PriceDescRes;
+    @AndroidFindBy(accessibility  = "//android.widget.TextView[@content-desc=\"Product Title\" and @text=\"Sauce Labs Backpack\"]")
+    private WebElement NameAscRes;
+    
     
     
     
@@ -49,6 +69,44 @@ public class ProductsPage extends BasePage {
     public WebElement ViewCartBtn() {
 		return ViewCartBtn;
 	}
+    
+    public WebElement SortIcon() {
+		return SortIcon;
+	}
+    
+    
+    public WebElement NameDescOpt() {
+		return NameDescOpt;
+	}
+    
+    
+    public WebElement PriceAscOpt() {
+		return PriceAscOpt;
+	}
+    public WebElement PriceDescOpt() {
+ 		return PriceDescOpt;
+ 	}
+     
+     
+     public WebElement NameAscOpt() {
+ 		return NameAscOpt;
+ 	}
+     
+     
+     public WebElement NameDescResult() {
+ 		return NameDescResult;
+ 	}
+     public WebElement PriceAscResult() {
+  		return PriceAscResult;
+  	}
+      
+      
+     public WebElement PriceDescRes() {
+  		return PriceDescRes;
+  	}
+     public WebElement NameAscRes() {
+   		return NameAscRes;
+   	}
     
     
     
