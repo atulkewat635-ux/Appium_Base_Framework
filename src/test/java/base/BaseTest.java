@@ -2,6 +2,10 @@ package base;
 
 import io.appium.java_client.android.AndroidDriver;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,13 +14,17 @@ import org.testng.annotations.BeforeClass;
 
 import utils.DriverFactory;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 public class BaseTest {
 
     public AndroidDriver driver;
     public WebDriverWait wait;
     public SuiteFlow PageObj;
+    public static Logger log = LogManager.getLogger(BaseTest.class);
 
     @BeforeClass(alwaysRun = true)
     public void setup() throws Exception {
@@ -88,7 +96,28 @@ public class BaseTest {
         }
     }
     
-    
+    public String captureScreen(String tname) {
+
+		log.debug("Capturing screenshot for test: {}", tname);
+		String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+
+		try {
+			File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+			String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp
+					+ ".png";
+
+			File targetFile = new File(targetFilePath);
+			sourceFile.renameTo(targetFile);
+
+			log.info("Screenshot saved at: {}", targetFilePath);
+			return targetFilePath;
+
+		} catch (Exception e) {
+			log.error("Failed to capture screenshot for test: {}", tname, e);
+			return null;
+		}
+	}
     
     
     
